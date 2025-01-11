@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="dashboard">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav>
+      <ul class="nav-main">
+        <li class="active" title="Project">
+          <span class="icon">📂</span>
+        </li>
+        <li title="Tasks">
+          <span class="icon">📋</span>
+        </li>
+        <li title="Board">
+          <span class="icon">📊</span>
+        </li>
+        <li class="inbox" title="Inbox">
+          <span class="icon">📬</span>
+          <span class="notification-dot active"></span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile">
+      <div class="profile-image">
+        <span>👤</span>
+      </div>
+      <div class="profile-info">
+        <p class="name">Ariel Johnson</p>
+        <p class="job-title">Web Developer</p>
+      </div>
+      <div class="profile-actions">
+        <button title="Sign Out">🔓</button>
+        <button title="Clock In/Out">⏰</button>
+        <button title="Account Settings">⚙️</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <header class="header">
+      <div class="greeting">
+        <h1>Good Morning, Ariel</h1>
+        <p>Have a fruitful day ahead! 😊</p>
+      </div>
+      <div class="info-bar">
+        <div class="date-time">
+          <div class="date">January 11, 2025</div>
+          <div class="time">10:29 AM</div>
+        </div>
+        <div class="weather">
+          <span class="weather-data">Loading weather...</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="widgets">
+      <div class="widget tasks">
+        <h2>My Tasks</h2>
+        <div class="task">
+          <div class="task-header">
+            <p>#53 Load-Up</p>
+            <span class="status in-progress">In Progress</span>
+          </div>
+          <p class="task-details">Due: 12/01/2025 - Finalizing mockups and preparing them for stakeholders.</p>
+        </div>
+        <div class="task">
+          <div class="task-header">
+            <p>#54 Clean-Up</p>
+            <span class="status pending">Pending</span>
+          </div>
+          <p class="task-details">Due: 12/02/2025 - Ensure all files are organized and backed up.</p>
+        </div>
+        <div class="task">
+          <div class="task-header">
+            <p>#52 Finalize Report</p>
+            <span class="status completed">Completed</span>
+          </div>
+          <p class="task-details">Completed on: 11/30/2025 - Report sent to stakeholders.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
